@@ -40,7 +40,7 @@ export default function Hero() {
               alt={featured.note}
               width={1216}
               height={1312}
-              fetchPriority="high"
+              fetchpriority="high"
             />
             <figcaption>
               <Sparkle />
