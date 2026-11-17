@@ -29,7 +29,7 @@ export default function Portfolio({ onSelect }) {
       <div className="la-shell">
         <div className="la-section-heading">
           <div>
-            <p className="la-kicker la-kicker--line">Portfólio</p>
+            <p className="la-kicker">Portfólio</p>
             <h2 id="la-portfolio-title">Ideias para suas próximas unhas</h2>
           </div>
           <p>Veja os acabamentos de perto e escolha um trabalho para levar como referência.</p>

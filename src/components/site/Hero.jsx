@@ -1,6 +1,5 @@
 import { ArrowDown, ArrowUpRight } from 'lucide-react';
 import { brand, portfolio } from '@/lib/siteContent';
-import { Sparkle } from './BrandMark';
 
 const featured = portfolio.find((item) => item.id === 'rubi-strass');
 const rose = portfolio.find((item) => item.id === 'rosa-suave');
@@ -10,10 +9,7 @@ export default function Hero() {
     <section className="la-hero" aria-labelledby="la-hero-title">
       <div className="la-shell la-hero-layout">
         <div className="la-hero-copy">
-          <p className="la-kicker la-hero-kicker">
-            <Sparkle />
-            Manicure · Pedicure · Nail art
-          </p>
+          <p className="la-kicker">Manicure · Pedicure · Nail art</p>
           <h1 id="la-hero-title">
             Unhas com<br /><em>o seu estilo.</em>
           </h1>
@@ -22,18 +18,15 @@ export default function Hero() {
           </p>
           <div className="la-hero-actions">
             <a href="#agendar" className="la-button la-button--primary">
-              Consultar horários <ArrowUpRight size={19} aria-hidden="true" />
+              Consultar horários <ArrowUpRight size={17} aria-hidden="true" />
             </a>
             <a href="#portfolio" className="la-text-link">
-              Ver portfólio <ArrowDown size={17} aria-hidden="true" />
+              Ver portfólio <ArrowDown size={16} aria-hidden="true" />
             </a>
           </div>
         </div>
 
         <div className="la-hero-art">
-          <div className="la-hero-trace" aria-hidden="true" />
-          <Sparkle className="la-hero-spark la-hero-spark--one" />
-          <Sparkle className="la-hero-spark la-hero-spark--two" />
           <figure className="la-hero-photo">
             <img
               src={featured.src}
@@ -42,10 +35,6 @@ export default function Hero() {
               height={1312}
               fetchpriority="high"
             />
-            <figcaption>
-              <Sparkle />
-              <span>{featured.title}</span>
-            </figcaption>
           </figure>
           <div className="la-hero-inset" aria-hidden="true">
             <img src={rose.src} alt="" width={1440} height={1920} decoding="async" />
